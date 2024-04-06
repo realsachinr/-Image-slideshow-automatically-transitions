@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(135, 135, 135);
+  position: relative;
+  align-items: center;
+}
+h1 {
+  font-size: 50px;
+  margin-top: 4rem;
+  filter: drop-shadow(3px 4px 3px rgb(0, 0, 0));
+}
+.container {
+  width: 40rem;
+  box-shadow: 2px 2px 10px 10px white;
+  height: 400px;
+  position: absolute;
+  margin: 0 auto;
+  margin-top: 15rem;
+  border: 1px solid black;
+  /* background-image: url(/assests/img1.jpeg); */
+  animation: slider 20s infinite linear;
+}
+
+@keyframes slider {
+  0% {
+    background-image: url("https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg");
+    background-size: 100% 100%;
+  }
+  20% {
+    background-image: url("https://wallpaper.dog/large/20481283.png");
+    background-size: 100% 100%;
+  }
+  40% {
+    background-image: url("https://wallpaper.dog/large/10753118.jpg");
+    background-size: 100% 100%;
+  }
+  80% {
+    background-image: url("https://t3.ftcdn.net/jpg/05/71/06/76/360_F_571067620_JS5T5TkDtu3gf8Wqm78KoJRF1vobPvo6.jpg");
+    background-size: 100% 100%;
+  }
+  100% {
+    background-image: url("https://wallpapersmug.com/download/3840x2400/b24123/bulb-lights-close-up.jpg");
+    background-size: 100% 100%;
+  }
+}
